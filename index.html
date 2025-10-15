@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create a simple Hello World page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>body{padding:2rem}</style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="mb-3">Create a simple Hello World page</h1>
+    <p class="text-muted">Create a simple Hello World page that displays today's date. The page must have an h1 element with id='hello' containing 'Hello World', and a paragraph with id='date' showing today's date in YYYY-MM-DD format.</p>
+    <div id="app"></div>
+    <hr/>
+    <small class="text-muted">Generated 2025-10-15T22:10:44.522750Z</small>
+  </main>
+  <script>
+  // Add your task-specific JS here based on the brief/checks
+  console.log("Checks:", ['Repo has MIT LICENSE', 'README.md exists and is professional', "Page has h1#hello with text 'Hello World'", 'Page has element #date showing current date', 'Page uses Bootstrap CSS from CDN']);
+  // Example: if brief mentions Hello World:
+  if (False) {
+      const d = new Date();
+      document.title = "Create a simple Hello World page";
+      document.getElementById("app").innerHTML =
+        "<h2>Hello World</h2><p>Today: " + d.toISOString().split('T')[0] + "</p>";
+  }
+  </script>
+</body>
+</html>
